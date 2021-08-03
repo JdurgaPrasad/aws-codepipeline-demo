@@ -15,7 +15,7 @@ const Button = styled.button`
   user-select: none;
 
   &:hover {
-    background-color: #333333;
+    background-color: #8176145;
     cursor: pointer;
   }
 `;
@@ -41,7 +41,7 @@ const Counter = () => {
 
   return (
     <div>
-      <CounterValue data-testid="counter-value">Count: {counter+1}</CounterValue>
+      <CounterValue data-testid="counter-value">Count: {counter}</CounterValue>
       <ButtonRow>
         <Button onClick={() => dispatch(-2)}>-2</Button>
         <Button onClick={() => dispatch(-1)}>-1</Button>
